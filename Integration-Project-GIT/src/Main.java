@@ -1,6 +1,9 @@
 import java.util.Date;
 import java.util.InputMismatchException;
 
+import Roster.Professor;
+import Roster.Student;
+
 //Carlos Perez
 //Profs. Vanselow COP 2006
 //Integration Project (Main)
