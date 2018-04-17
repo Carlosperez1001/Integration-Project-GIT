@@ -46,7 +46,7 @@ public class Main {
 			System.out.println("(8)Tic Tac Toe");
 			System.out.println("(9)Minesweeper");
 			System.out.println("(10)Data Structures");
-			System.out.println("(11)Class Rooster");
+			System.out.println("(11)Class Roster");
 			// Input
 			try {// Validate menu input
 				topicNUM = ScannerTool.sc.nextInt();
