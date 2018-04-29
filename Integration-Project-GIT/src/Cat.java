@@ -1,10 +1,12 @@
-//Carlos Perez
-//Profs. Vanselow COP 2006
-//Integration Project (Cat Class)
 
-/*In the cat class, the basic methodology of getters and setters are displayed below. 
- The variable modifier "private" is also
+
+/**
+ * Integration Project (Cat Class)
+ * In the cat class, the basic methodology of getters and setters are 
+ * displayed below. The variable modifier "private" is also
  used thought this class to contain data.  
+ 
+ * @author Carlos Perez
  */
 public class Cat  {
 	private String color;
@@ -15,6 +17,10 @@ public class Cat  {
 	private String breedOptions[] = { "Persian ", "Siamese ", "Begal ", "Egytan Mau ", "Burmese " };
 
 
+	/**
+	 * Choose random index for the given array to determine color/name/breed.
+	 * @return The index number.
+	 */
 	public int setOdds() {
 		return  (int) Math.floor(Math.random() * colorOptions.length);
 	}

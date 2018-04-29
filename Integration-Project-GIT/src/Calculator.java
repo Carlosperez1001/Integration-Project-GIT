@@ -1,18 +1,32 @@
 
+/**
+ * Class "Calculator" will handle all complex calculation. Currently the method
+ * STASetup is capable of sorting a list, finding the average of said list,
+ * determine the range, variance and standard deviation.
+ * 
+ * @author Carlos Perez
+ */
 public class Calculator {
-	//--(1)STA 2023
+	// --(1)STA 2023
 	String dataString; // Input
 	double average = 0;
 	double range = 0;
 	double variance = 0;
 	double deviation = 0;
-	public void STASetup(){
+
+	/**
+	 * After selection 1 in the main, the program will take in a list of numbers
+	 * [double or int] as a string. This string is split at every [“Space“] and
+	 * will create array with the value. The list is then sorted and perform simple
+	 * calculations.
+	 */
+	public void STASetup() {
 		System.out.println("Enter a your data list");
 		ScannerTool.sc.nextLine();
 		dataString = ScannerTool.sc.nextLine();
-		String dataStringSplit [] = dataString.split(" ");
+		String dataStringSplit[] = dataString.split(" ");
 		try {
-			double data[] = new double [dataStringSplit.length];
+			double data[] = new double[dataStringSplit.length];
 			for (int i = 0; i < dataStringSplit.length; i++) {
 				data[i] = Double.valueOf(dataStringSplit[i]);
 			}
@@ -25,7 +39,7 @@ public class Calculator {
 					}
 				}
 			}
-			
+
 			// Step 1 of Calculations
 			for (int i = 0; i < data.length; i++) {
 				System.out.print(data[i] + " ");
@@ -49,13 +63,14 @@ public class Calculator {
 					System.out.println("(Sample)Variance: " + variance);
 					System.out.println("(Sample)Standand DEV.: " + deviation);
 				}
-			}			
-		} catch (NumberFormatException e) {
-			System.out.println("error");{
 			}
-			
+		} catch (NumberFormatException e) {
+		System.out.println("error");
+			{
+			}
+
 		}
-		
+
 	}
 
 }

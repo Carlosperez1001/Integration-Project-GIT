@@ -1,3 +1,5 @@
+import java.util.Random;
+
 //Carlos Perez
 //Profs. Vanselow COP 2006
 //Integration Project (RGNDataList)
@@ -9,6 +11,7 @@
 
 public class RNGDataList {
 	public void RNGDataListSetup() {
+		Random rand = new Random();
 		int dataSize;
 		int sum = 0;
 		int min = 0;
@@ -20,7 +23,7 @@ public class RNGDataList {
 		int dataList[] = new int[dataSize];
 
 		for (int i = 0; i < dataList.length; i++) {
-			dataList[i] = (int) (Math.random() * 99) + 1;
+			dataList[i] = rand.nextInt(100);
 			if (i == 0) {
 				min = (dataList[0]);
 				max = (dataList[0]);

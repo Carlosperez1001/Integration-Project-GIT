@@ -1,26 +1,20 @@
 import java.util.*;
 
-//Carlos Perez
-//Profs. Vanselow COP 2006
-//Integration Project (CardTrick)
-
-/*WARNING
-* This class will output wingdings 
-* If they do not appear, go to 
-* Windows -> Preferences -> General ->Workspace
-* Then change the "TextFile encoding" to "Other: UFT -8"
-*/
-
-/*
-The CardTrick class is program that utilizes the ArrayList datatype.
-The program begins by creating the user’s input format 
-“CardFace [space] CardSuit]” and then creates a deck of cards after.
-By using an Arraylist , the order of cards can be randomly shuffled 
-by using “Collections.shuffle(Deck);”  After this, the user will be 
-prompted “what card they would like?” and the program will do a 
-linear search to find that card. 
-*/
-
+/**
+ * [WARNING] This class will output wingdings If they do not appear, go to
+ * Windows -> Preferences -> General ->Workspace Then change the "TextFile
+ * encoding" to "Other: UFT -8"
+ * 
+ * The CardTrick class is program that utilizes the ArrayList datatype. The
+ * program begins by creating the user’s input format CardFace [space]
+ * CardSuit] and then creates a deck of cards after. By using an Arraylist ,
+ * the order of cards can be randomly shuffled by using
+ * Collections.shuffle(Deck); After this, the user will be prompted what card
+ * they would like? and the program will do a linear search to find that card.
+ * 
+ * @author Carlos Perez
+ *
+ */
 public class CardTrick {
 	ArrayList<String> Deck = new ArrayList<String>();
 	String CardFace;
@@ -29,20 +23,20 @@ public class CardTrick {
 
 	public void setCard(String card) {
 		// Set up Users Input
-try {
-		String[] cardFormat = card.split(" ");
-		String UserCardFace = cardFormat[0];
-		String UserSuit = cardFormat[1];
-		CreateDeck();
-		validateCard(UserCardFace, UserSuit);
-		
-}catch (ArrayIndexOutOfBoundsException exception) {
-	System.out.println("Error");
-}
-	
+		try {
+			String[] cardFormat = card.split(" ");
+			String UserCardFace = cardFormat[0];
+			String UserSuit = cardFormat[1];
+			createDeck();
+			validateCard(UserCardFace, UserSuit);
+
+		} catch (ArrayIndexOutOfBoundsException exception) {
+		System.out.println("Error");
+		}
+
 	}
 
-	public void CreateDeck() {
+	public void createDeck() {
 		for (int i = 0; i < 4; i++) {
 			for (int x = 1; x <= 13; x++) {
 				if (x == 1) {

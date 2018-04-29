@@ -287,7 +287,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3yuMcDkgEeiXUtJlHEOUZA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_2mU3UEBeEeiFjPUz4HeVeQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_3YfHtDkgEeiXUtJlHEOUZA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="__L1ygEmcEeiXFKUkKkxcbA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_3YfHtDkgEeiXUtJlHEOUZA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3yuMcTkgEeiXUtJlHEOUZA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -308,7 +308,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3yuzgDkgEeiXUtJlHEOUZA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_2mXTkEBeEeiFjPUz4HeVeQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_3YegnTkgEeiXUtJlHEOUZA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="__L4OwEmcEeiXFKUkKkxcbA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_3YegnTkgEeiXUtJlHEOUZA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_3yuzgTkgEeiXUtJlHEOUZA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1226,6 +1226,18 @@
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.egit.ui"/>
     <tags>View</tags>
     <tags>categoryTag:Git</tags>
+  </descriptors>
+  <descriptors xmi:id="_FbmsEEgLEeicK4VTf_ik_w" elementId="de.tobject.findbugs.view.buginfoview" label="Bug Info" iconURI="platform:/plugin/com.github.spotbugs.plugin.eclipse/icons/annotationsView.png" tooltip="" category="SpotBugs" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="de.tobject.findbugs.view.BugInfoView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.github.spotbugs.plugin.eclipse"/>
+    <tags>View</tags>
+    <tags>categoryTag:SpotBugs</tags>
+  </descriptors>
+  <descriptors xmi:id="_FbohQEgLEeicK4VTf_ik_w" elementId="de.tobject.findbugs.view.bugtreeview" label="Bug Explorer" iconURI="platform:/plugin/com.github.spotbugs.plugin.eclipse/icons/treeView.png" tooltip="" category="SpotBugs" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="de.tobject.findbugs.view.BugExplorerView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.github.spotbugs.plugin.eclipse"/>
+    <tags>View</tags>
+    <tags>categoryTag:SpotBugs</tags>
   </descriptors>
   <menuContributions xmi:id="_3XwuyDkgEeiXUtJlHEOUZA" elementId="org.eclipse.ui.window.customizePerspective" contributorURI="platform:/plugin/org.eclipse.platform" positionInParent="popup:toolbar">
     <children xsi:type="menu:HandledMenuItem" xmi:id="_3XwuyTkgEeiXUtJlHEOUZA" elementId="org.eclipse.ui.window.customizePerspective" contributorURI="platform:/plugin/org.eclipse.platform" label="%command.name.customize" command="_3XwuyjkgEeiXUtJlHEOUZA"/>
@@ -2248,6 +2260,21 @@
   <commands xmi:id="_3wYqIzkgEeiXUtJlHEOUZA" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.tasks.ui.open.repositories.view" commandName="Show Task Repositories View" description="Show Task Repositories View" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
   <commands xmi:id="_3wZRMDkgEeiXUtJlHEOUZA" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.doc.legend.show.action" commandName="Show UI Legend" description="Show Tasks UI Legend" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
   <commands xmi:id="_3wZRMTkgEeiXUtJlHEOUZA" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.context.ui.actions.tasklist.focus" commandName="Focus on Workweek" description="Focus on Workweek" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
+  <commands xmi:id="_FY9nwEgLEeicK4VTf_ik_w" elementId="FindBugs.command.copy" commandName="Copy Bug Details (Bug Group)" category="_FY9AsUgLEeicK4VTf_ik_w"/>
+  <commands xmi:id="_FY-O0EgLEeicK4VTf_ik_w" elementId="FindBugs.command.copy2" commandName="Copy Bug Details (Bug)" category="_FY9AsUgLEeicK4VTf_ik_w"/>
+  <commands xmi:id="_FnucgEgLEeicK4VTf_ik_w" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.action3" commandName="Go Up" description="Go Up" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
+  <commands xmi:id="_FnvDkEgLEeicK4VTf_ik_w" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.action4" commandName="Go Into" description="Go Into" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
+  <commands xmi:id="_FnvDkUgLEeicK4VTf_ik_w" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.action1" commandName="Refresh" description="Refresh explorer content" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
+  <commands xmi:id="_FnvDkkgLEeicK4VTf_ik_w" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.toggleGrouping.Confidence.Project.Pattern.Marker" commandName="Confidence->Project->Pattern" description="Change Bug Explorer Grouping" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
+  <commands xmi:id="_FnvDk0gLEeicK4VTf_ik_w" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.toggleGrouping.Confidence.BugRank.Pattern.Marker" commandName="Confidence->Rank->Pattern" description="Change Bug Explorer Grouping" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
+  <commands xmi:id="_FnvqoEgLEeicK4VTf_ik_w" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.toggleGrouping.BugRank.Project.Pattern.Marker" commandName="Rank->Project->Pattern" description="Change Bug Explorer Grouping" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
+  <commands xmi:id="_FnvqoUgLEeicK4VTf_ik_w" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.toggleGrouping.BugRank.Confidence.Pattern.Marker" commandName="Rank->Confidence->Pattern" description="Change Bug Explorer Grouping" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
+  <commands xmi:id="_FnvqokgLEeicK4VTf_ik_w" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.toggleGrouping.Project.Confidence.BugRank.Pattern.Marker" commandName="Project->Confidence->Rank->Pattern" description="Change Bug Explorer Grouping" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
+  <commands xmi:id="_FnwRsEgLEeicK4VTf_ik_w" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.toggleGrouping.Project.BugRank.Confidence.Pattern.Marker" commandName="Project->Rank->Confidence->Pattern" description="Change Bug Explorer Grouping" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
+  <commands xmi:id="_FnwRsUgLEeicK4VTf_ik_w" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.toggleGrouping.groupDialog" commandName="Group By..." description="Change Bug Explorer Grouping" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
+  <commands xmi:id="_FnwRskgLEeicK4VTf_ik_w" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.actionCollapse" commandName="Collapse All" description="Collapse All" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
+  <commands xmi:id="_Fnw4wEgLEeicK4VTf_ik_w" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.actionExpand" commandName="Expand All" description="Expand All" category="_3YUvhDkgEeiXUtJlHEOUZA"/>
+  <commands xmi:id="_Fnw4wUgLEeicK4VTf_ik_w" elementId="AUTOGEN:::findBugsEclipsePlugin.viewContribution1/findBugsEclipsePlugin.filterBugs" commandName="Configure Filters..." description="Filter Bugs by Id..." category="_3YUvhDkgEeiXUtJlHEOUZA"/>
   <addons xmi:id="_3XwuyzkgEeiXUtJlHEOUZA" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_3XwuzDkgEeiXUtJlHEOUZA" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_3XwuzTkgEeiXUtJlHEOUZA" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -2296,4 +2323,5 @@
   <categories xmi:id="_3YUvgzkgEeiXUtJlHEOUZA" elementId="org.eclipse.oomph.commands" name="Oomph"/>
   <categories xmi:id="_3YUvhDkgEeiXUtJlHEOUZA" elementId="org.eclipse.core.commands.categories.autogenerated" name="Uncategorized" description="Commands that were either auto-generated or have no category"/>
   <categories xmi:id="_DbsAQOIjEeWDJvu3hU0AuQ" elementId="org.eclipse.recommenders.news.rcp.category.news" contributorURI="platform:/plugin/org.eclipse.recommenders.news.rcp" name="%category.name.news" description="%category.description.news"/>
+  <categories xmi:id="_FY9AsUgLEeicK4VTf_ik_w" elementId="FindBugs.category" name="SpotBugs commands" description="SpotBugs commands"/>
 </application:Application>

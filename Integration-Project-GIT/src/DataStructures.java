@@ -3,19 +3,18 @@ import java.util.LinkedList;
 import java.util.NoSuchElementException;
 import java.util.Queue;
 import java.util.Stack;
-//Carlos Perez
-//Profs. Vanselow COP 2006
-//Integration Project(Data Structures)
 
-/* The Data Structures Class focus on how queues 
- * and stacks functions. Users will input a string 
- * entry 1 line at a time and will add(Queue) or push(Stack) the entry.
- *  Then the user will input an int to either to 
- *  remove(queue) or pop(stack) the items in the list.*/
-
+/**
+ * Integration Project(Data Structures) The Data Structures Class focus on how
+ * queues and stacks functions. Users will input a string entry 1 line at a time
+ * and will add(Queue) or push(Stack) the entry. Then the user will input an int
+ * to either to remove(queue) or pop(stack) the items in the list.
+ * 
+ * @author Carlos Perez
+ */
 
 public class DataStructures {
-	public void DataStructuresSetup() {
+	public void dataStructuresSetup() {
 		int dataSTR;
 		String input;
 		boolean loop = true;
@@ -38,7 +37,7 @@ public class DataStructures {
 			Remover = ScannerTool.sc.nextInt();
 			try {
 				for (int i = 0; i < Remover; i++) {
-				queue.remove();
+					queue.remove();
 
 				}
 				System.out.println(queue);
@@ -47,7 +46,7 @@ public class DataStructures {
 			}
 		}
 		if (dataSTR == 2) {
-			Stack st = new Stack();
+			Stack<String> st = new Stack<String>();
 			ScannerTool.sc.nextLine();
 			while (loop == true) {
 				input = ScannerTool.sc.nextLine();

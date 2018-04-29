@@ -1,18 +1,22 @@
-//Carlos Perez
-//Profs. Vanselow COP 2006
-//Integration Project (Casting Class)
 
-/*This class contains data that simples displays the maximum value
-of certain variables types.  The java method Math.pow(x,n) is 
-used to check the breaking point of the data type.  */
-
+/**
+ *Integration Project (Casting Class)
+ *This class contains data that simples displays the maximum value
+ *of certain variables types.  The java method Math.pow(x,n) is 
+ *used to check the breaking point of the data type.  
+ *
+ * @author Carlos Perez
+ */
 public class Casting {
 	private long limitBreak = 0;
 	private String limitBreakString;
 
-
+	/**
+	 *Checks for the maximum value for certain data types.  
+	 * @return max value.
+	 */
 	public String setCasting() {
-		return  (limitBreakString + " max value is " + Long.toString(limitBreak - 1));
+		return (limitBreakString + " max value is " + Long.toString(limitBreak - 1));
 	}
 
 	public void checkLimit(long counter) {
@@ -28,10 +32,6 @@ public class Casting {
 		}
 		if (counter == Math.pow(2, 32)) {
 			limitBreakString = "Int";
-			System.out.println(setCasting());
-		}
-		if (counter == Math.pow(2, 63) * -1) {
-			limitBreakString = "Long";
 			System.out.println(setCasting());
 		}
 

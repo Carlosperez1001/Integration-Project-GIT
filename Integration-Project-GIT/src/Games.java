@@ -2,17 +2,25 @@
 //Profs. Vanselow COP 2006
 //Integration Project (Game Class)
 
-/* This class goes on functionally of 2d array and is breaking down into 2 parts.
-1.)[TicTacToe] Gets users [x,y] input to place a x into the 3x3 grid. The program checks for valid moves and winner after every move.
-2.) [MineSweeper] Creates a 10x10 grid and randomly places a mine [x] up to a given amount. The 2d array is printed and checks if there is a [x].
- */
 
-import java.util.Arrays;
+
+import java.util.Random;
+
+/**
+ * This class goes on functionally of 2d array and is breaking down into 2 parts.
+ * 1.)[TicTacToe] Gets users [x,y] input to place a x into the 3x3 grid. 
+ * The program checks for valid moves and winner after every move.
+ * 2.) [MineSweeper] Creates a 10x10 grid and randomly places a mine [x] up
+ *  to a given amount. The 2d array is printed and checks if there is a [x].
+ 
+ * @author Carlos Perez
+ *
+ */
 public class Games {
 	public int counter = 0;
 
 	public void TTTSetup() {
-
+		Random rand = new Random();
 		int rowP;
 		int colP;
 		int rowCom;
@@ -45,10 +53,10 @@ public class Games {
 					} else {
 						TTTGrid[rowP - 1][colP - 1] = "x ";
 						validInput = true;
-						win = CheckWinner(TTTGrid, win);
+						win = checkWinner(TTTGrid, win);
 						if (win == true) {
 							System.out.println("Player Wins");
-							PrintOut(TTTGrid, counter);
+							printOut(TTTGrid, counter);
 							break;
 						}
 					}
@@ -63,16 +71,16 @@ public class Games {
 			validInput = false;
 			// Computer's Input
 			while (validInput == false) {
-				rowCom = (int) (Math.random() * 3);
-				colCom = (int) (Math.random() * 3);
+				rowCom = (rand.nextInt(3));
+				colCom = (rand.nextInt(3));
 				if (TTTGrid[rowCom][colCom] == "x " || TTTGrid[rowCom][colCom] == "o ") {
 				} else {
 					TTTGrid[rowCom][colCom] = "o ";
 					validInput = true;
-					win = CheckWinner(TTTGrid, win);
+					win = checkWinner(TTTGrid, win);
 					if (win == true) {
 						System.out.println("Computer Wins");
-						PrintOut(TTTGrid, counter);
+						printOut(TTTGrid, counter);
 						break;
 					}
 
@@ -82,11 +90,11 @@ public class Games {
 			if (win == true) {
 				break;
 			}
-			PrintOut(TTTGrid, counter);
+			printOut(TTTGrid, counter);
 		}
 	} // Game Loop Exit
 
-	public boolean CheckWinner(String[][] TTTGrid, boolean win) {
+	public boolean checkWinner(String[][] TTTGrid, boolean win) {
 		for (int i = 0; i < 2; i++) {
 			if (TTTGrid[i][0] == "x " && TTTGrid[i][1] == "x " && TTTGrid[i][2] == "x ") {// Horz.
 				win = true;
@@ -127,7 +135,7 @@ public class Games {
 		return win;
 	}
 
-	public void PrintOut(String[][] TTTGrid, int counter) {
+	public void printOut(String[][] TTTGrid, int counter) {
 		for (int i = 0; i < 3; i++) {
 			for (int x = 0; x < 3; x++) {
 				counter++;
@@ -142,7 +150,7 @@ public class Games {
 
 	}
 
-	public void MineSweeperSetup() {
+	public void mineSweeperSetup() {
 		int maxBombs = 20;
 		int bomb = 0;
 		int odd = 10;
